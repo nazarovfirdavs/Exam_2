@@ -1,0 +1,120 @@
+.scooter{
+    width: 1440px;
+    height: 650px;
+    background-image: url("../../img/scooter.png");
+    background-color: #666;
+    &__block::before{
+        content: url(../../img/scooter_before.png);
+        position: absolute;
+        width: 202px;
+        height: 20px;
+        background-color: $yellow;
+        margin: 353px 0px;
+    }
+    // &__block::after{
+    //     content: url(../../img/scooter__after.svg);
+    //     position: absolute;
+    //     width: 446px;
+    //     height: 137px;
+    //     background-color: $yellow;
+    //     margin: 55px 406px;
+    // }
+    &__img{
+        position: absolute;
+        margin-top: -100px;
+    }
+    &__name{
+        width: 500px;
+        height: 112px;
+        padding: 153px 165px 0px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+    &__text{
+        width: 360px;
+        height: 100px;
+        padding: 0px 260px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    &__btn{
+        width: 180px;
+        height: 53px;
+        background-color: $yellow;
+        margin: 40px 260px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 14px 39px;
+    }
+    &__btn:hover{
+        border: 1px solid $yellow;
+        color: $yellow;
+        background-color: transparent;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .scooter{
+        width: 768px;
+        height: 650px;
+        &__block::before{
+            margin-top: 473px;
+        }
+        &__img{
+            display: none;
+        }
+        &__text{
+            width: 573px;
+            height: 75px;
+            text-align: center;
+            padding: 0px 97px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .scooter{
+      width: 375px;
+      height: 650px;
+    &__block::before{
+      margin-top: 560px;
+      width: 140px;
+    }
+    &__name{
+      width: 311px;
+      height: 120px;
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -1.78571px;
+      margin-left: -120px;
+    }
+    &__text{
+      width: 311px;
+      height: 125px;
+      text-align: center;
+      margin-left: -60px;
+    }
+    &__btn{
+      margin: 34px 98px;
+    }
+}
+}

@@ -1,0 +1,82 @@
+.header{
+    margin: 22px 169px;
+    &__block{
+        display: flex;
+    }
+    &__menu{
+        display: flex;
+        column-gap: 32px;
+        margin-left: 58px;
+    }
+    &__title{
+        list-style: none;
+    }
+    &__link{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim__grey;
+        text-decoration: none;
+    }
+    &__link:hover{
+        color: $yellow;
+    }
+    &__btn{
+        position: absolute;
+        margin-top: 22px;
+        margin-left: 918px;
+        width: 150px;
+        height: 43px;
+        background: $yellow;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;        
+        text-align: center;
+        color: #FFFFFF;
+        padding: 14px 39px 0px;
+        text-decoration: none;
+    }
+    &__btn:hover{
+        background-color: #FFFFFF;
+        border: 1px solid $yellow;
+        color: $yellow;
+    }
+}
+@media only screen and (max-width: 768px){
+    .header{
+        margin: 34px 39px;
+        &__menu{
+            margin-left: 10px;
+        }
+        &__btn{
+            margin-top: -5px;
+            margin-left: 448px;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .header{
+    &__menu{
+      display: none;
+    }
+    &__block::before{
+      content: url("/img/Header_menu.svg");
+      position: absolute;
+      width: 20px;
+      height: 16px;
+      color: #FCB72B;
+      background-color: #FCB72B;
+    }
+    &__btn{
+      display: none;
+    }
+    &__logo{
+      position: absolute;
+      margin: 2px 150px 0px;
+    }
+}
+}

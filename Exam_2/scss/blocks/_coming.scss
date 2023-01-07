@@ -1,0 +1,118 @@
+.coming{
+    margin: 160px 165px 0px;
+    &__block{
+        display: flex;
+        column-gap: 220px;
+    }
+    &__block::before{
+        content: url(/img/scooter__after.svg);
+        position: absolute;
+        width: 400px;
+        background-color: $yellow;
+        margin-top: 40px;
+        margin-left: -150px;
+    }
+    &__content{
+        margin-top: 30px;
+    }
+    &__name{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $dark__navy;
+    }
+    &__text{
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim__grey;
+        width: 445px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    &__btn{
+        width: 180px;
+        height: 53px;
+        color: #FFFFFF;
+        background: $yellow;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        padding: 14px 44px;
+        text-decoration: none;
+    }
+    &__btn:hover{
+        border: 1px solid $yellow;
+        color: $yellow;
+        background-color: #FFFFFF;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .coming{
+    &__block{
+        display: block;
+        column-gap: 64px;
+    }
+    &__name{
+        text-align: center;
+        letter-spacing: -2.14286px;
+        width: 457px;
+        height: 96px;
+        margin-left: 10px;
+      }
+      &__text{
+        width: 573px;
+        height: 75px;
+        text-align: center;
+        margin-left: -70px;
+        
+      }
+      &__btn{
+        margin-left: 140px;
+      }
+      &__img{
+        margin-left: 4px;
+      }
+}
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .coming{
+    &__name{
+      margin-left: -120px;
+      width: 311px;
+      height: 64px;
+      font-size: 32px;
+      letter-spacing: -1.42857px;
+    }
+    &__text{
+      padding-top: 32px;
+      margin-left: -110px;
+      width: 311px;
+      height: 150px;
+      text-align: center;
+    }
+    &__btn{
+      padding: 14px 44px 0px;
+      width: 180px;
+      height: 53px;
+      position: absolute;
+      margin-left: -90px;
+    }
+    &__img{
+      width: 311px;
+      height: 311px;
+      margin-left: -112px;
+    }
+    &__block::before{
+      width: 300px;
+    }
+}
+  }

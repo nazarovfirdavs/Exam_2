@@ -1,0 +1,125 @@
+.zero{
+    margin: 160px 165px;
+    &__img{
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+    &__block{
+        display: flex;
+        column-gap: 220px;
+    }
+    &__block::before{
+        content: "";
+        width: 500px;
+        height: 20px;
+        position: absolute;
+        background-color: $yellow;
+        margin: 85px 820px 0px;
+    }
+    &__name{
+        width: 445px;
+        height: 96px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $dark__navy;
+    }
+    &__text{
+        width: 445px;
+        height: 100px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim__grey;
+        margin-bottom: 40px;
+    }
+    &__btn{
+        width: 180px;
+        height: 53px;
+        background: $yellow;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 14px 44px;
+        text-decoration: none;
+    }
+    &__btn:hover{
+        border: 1px solid $yellow;
+        color: $yellow;
+        background-color: #FFFFFF;
+    }
+}
+@media only screen and (max-width: 768px) {
+    &__block{
+        display: block;
+        column-gap: 42px;
+    }
+    &__block::before{
+      margin: 85px 155px;
+      width: 360px;
+    }
+    &__name{
+      text-align: center;
+      letter-spacing: -2.14286px;
+      margin-left: 10px;
+    }
+    &__text {
+      width: 573px;
+      height: 75px;
+      text-align: center;
+      margin-left: -70px;
+    }
+    &__btn{
+      margin-left: 140px;
+    }
+    &__img{
+      margin-top: 64px;
+      margin-left: 4px;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .zero{
+  &__name{
+    margin-left: -120px;
+    width: 311px;
+    height: 64px;
+    font-size: 32px;
+    letter-spacing: -1.42857px;
+  }
+  &__block::before{
+    display: none;
+  }
+  &__text{
+    padding-top: 32px;
+    margin-left: -110px;
+    width: 311px;
+    height: 150px;
+    text-align: center;
+  }
+  &__img{
+    width: 311px;
+    height: 311px;
+    margin-top: 90px;
+    margin-left: -112px;
+  }
+  &__btn{
+    padding: 14px 44px 0px;
+    width: 180px;
+    height: 53px;
+    position: absolute;
+    margin-left: -90px;
+  }
+}
+}
